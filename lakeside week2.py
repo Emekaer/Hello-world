@@ -9,12 +9,18 @@ PYTHON SYNTAX
 
 # This is a comment. It is a single line comment
 
+# docstrings 
+
+
 """
 This is a multiline comment
 """
 
 # I can also use the pound / hash / naira [if you love Nigeria so] comment style
 # to create a multiline comment
+# this is a new line
+
+# boolean =True or False
 
 """
 2 Primitive Data Types
@@ -106,11 +112,16 @@ print 11%4
 # Python provides operators [not restricted to numbers as we shall see later] for comparing numbers
 # They include the ususal suspects `>` for greater than, `<` for less than, `==` for equality
 # `>=` and `<=` represent 'greater than' and 'less than' respectively
+# `!` is used for negation
 # the result of these comparisons is a boolean value. Meaning that it is can only be either True or False
 
 print 45 > 40
 print 56 == 57
 
+
+# Using the Math library
+# import it
+import math
 
 """
 2 Strings
@@ -134,6 +145,8 @@ print allTogether
 print allTogether * 2
 
 # You can also compare strings
+# ===
+#  
 print "cool" == "cool"
 
 # remember python is case sensitive
@@ -148,11 +161,15 @@ b String Formatting and special characters
 	Python also provides special characters as we shall see in a bit, as well as a nice string formatting SYNTAX
 """
 
+# `\` is called escape 
 print "cool\n"
 print "cool\n\n"
 print "nice\tright ?\n"
 
-# for string formats
+# for string formats / placeholders
+# %s -> strings
+# %d -> numbers
+# %.6f
 gender = "boy"
 print "This is a good %s" % gender
 
@@ -167,3 +184,7 @@ c Python String Functions
 	So far we've learnt some cool stuff about strings and numbers. But python provides powerful functions which operate on a string
 	To see these functions we would need to look at the python documentation and play with some of the functions there
 """
+
+# str replace
+firststring = "I am going home now"
+secondstring = firststring.replace("now", "soon")
